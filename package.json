@@ -1,13 +1,20 @@
 {
-  "name": "detector",
+  "name": "ms-detector",
   "version": "1.0.0",
-  "description": "Object Detector",
-  "main": "./lib/detector.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
+  "description": "team ms detector.",
+  "main": "lib/detector.js",
+  "scripts": {},
   "license": "MIT",
-  "type": "module"
+  "type": "module",
+  "author": "changho147 <afterlife1477@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/changho147/detector"
+  },
+  "homepage": "https://github.com/changho147/detector",
+  "bugs": {
+    "url": "https://github.com/changho147/detector/issues",
+    "email": "afterlife1477@gmail.com"
+  },
+  "keywords": ["detect", "detector"]
 }
