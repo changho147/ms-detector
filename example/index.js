@@ -12,8 +12,10 @@ console.log(isChangedText);
 let obj = {A: "Lorem", B: "Ipsum"};
 Detector.set("OBJ", obj);
 
-obj.C = "Text";
-const isChangedObj = Detector.detect("OBJ", obj, {length: true});
+obj.B = "Lorem";
+obj.A = "Ipsum";
+const isChangedObj = Detector.detect("OBJ", obj);
 
 // true
 console.log(isChangedObj);
+
