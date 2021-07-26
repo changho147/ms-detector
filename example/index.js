@@ -1,31 +1,14 @@
 import * as Detector from "../lib/detector.js"
 
-let text = "Lorem";
-Detector.set("TEXT", text);
-
-text = "Ipsum";
-const isChangedText = Detector.detect("TEXT", text);
-
-// {
-//     isChanged: true,
-//     detected: [ { detectedItem: 'Lorem', changedItem: 'Ipsum' } ]
-// }
-console.log(isChangedText);
-
-
-let obj = {A: "Lorem", B: "Ipsum"};
+let obj = {name: "NAME", age: 15};
 Detector.set("OBJ", obj);
 
-obj.B = "Lorem";
-obj.A = "Ipsum";
-const isChangedObj = Detector.detect("OBJ", obj);
+obj.name = "NAMES";
+obj.age = 20;
 
-// {
-//     isChanged: true,
-//     detected: [
-//         { detectedItem: 'Lorem', changedItem: 'Ipsum' },
-//         { detectedItem: 'Ipsum', changedItem: 'Lorem' }
-//     ]
-// }
-console.log(isChangedObj);
+const detected = Detector.detect("OBJ", obj, {size: true, excludes: ["age"]});
+console.log(detected);
+
+
+
 
