@@ -5,6 +5,7 @@ Detector.set("OBJ", obj);
 
 obj.name = "NAMES";
 obj.age = 20;
+obj.gender = "male";
 
 const detected = Detector.detect("OBJ", obj, {size: true, excludes: ["age"]});
 console.log(detected);
