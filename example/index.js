@@ -8,6 +8,7 @@ obj.age = 20;
 
 const detected = Detector.detect("OBJ", obj, {size: true, excludes: ["age"]});
 console.log(detected);
+console.log(detected);
 
 
 
